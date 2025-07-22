@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($stmt->execute([$uid, $vessel, $port, $date, $services, $notes])) {
         // envia email notificando admin/instituição
         mail(
-          'philasean@philaseanprovider.co.mz',
+          'Jorgemaabuie@gmail.com,
           'Novo Pedido PHIL ASEAN',
           "Pedido #{$pdo->lastInsertId()}\nNavio: $vessel\nPorto: $port\nData: $date\nServiços: $services"
         );
